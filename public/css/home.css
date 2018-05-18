@@ -1,0 +1,518 @@
+@charset "utf-8";
+*{ font-family: DejaVu Sans;}
+.page-break {
+    page-break-after: always;
+}
+html,
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+#header {
+    margin: 0 50px;
+}
+#container {
+    min-height:100%;
+    position:relative;
+}
+#body {
+    padding:0 10px 150px;   /* Height of the footer */
+}
+#footer {
+    width:100%;
+    height:140px;   /* Height of the footer */
+    position:absolute;
+    bottom:0;
+}
+#footer .footer {
+    background-color: #000033;
+    margin : 0 50px;
+    padding: 10px 0;
+    height: 100%;
+}
+/* Common CSS */
+.btn-group > .btn {
+    width: 120px;
+    margin-left: 15px !important;
+    border-radius: 10px;
+}
+.table > tbody > tr > td.action a {
+    margin: 5px;
+}
+.red {
+    color: #c80000 !important;
+}
+.blue {
+    color: #0000c8 !important;
+}
+.green {
+    color: #009600 !important;
+}
+
+/* BEGIN SHOWMESSAGE JQUERY */
+.notification{font-family: Gotham, HTC Hand, Helvetica, Arial, sans-serif; font-size: large !important;font-weight: bold;background-color: rgb(247, 247, 247);color: red;z-index: 100000 !important;}
+.success{font-family: Gotham, HTC Hand, Helvetica, Arial, sans-serif; font-size: large !important;font-weight: bold;background-color: #acfa58;color: black;z-index: 100000 !important;}
+.error{font-family: Gotham, HTC Hand, Helvetica, Arial, sans-serif; font-size: large !important;font-weight: bold;background-color: #fe2e2e;color: white;z-index: 100000 !important;}
+.error li {background:none !important;font-size: large !important;display:block;}
+/* END SHOWMESSAGE JQUERY */
+
+/* End Common CSS */
+#header .banner {
+    background-color: #000033;
+}
+.container-fluid #header {
+    margin-right: auto;
+    margin-left: auto;
+}
+.cke_dialog_background_cover {
+	z-index: 1000 !important;
+}
+.cke_dialog {
+	z-index: 1001 !important;
+}
+@media screen and (min-width: 769px) {
+    #header .navbar {
+        margin-top: 1px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .navbar-custom {
+        color:#ffffff;
+        border-radius:0;
+		background: #1e5799; /* Old browsers */
+		background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );
+    }
+    #myNavbar {
+        padding: 0;
+    }
+    #myNavbar > ul {
+        width: 100%;
+        height: 50px;
+    }
+    #myNavbar > ul > li > a {
+       padding-left: 0px;
+       padding-right: 0px;
+    }
+    #header li {
+        color: #FFF;
+        font-size: 13px;
+        font-weight: bold;
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-right-color: #fff;
+        width: 10%;
+        height: 100%;
+        text-align:center;
+    }
+    #header li:last-child {
+        border-right: medium none;
+    }
+}
+@media screen and (max-width: 768px) {
+    #myNavbar{
+        margin-top: 0px;
+        width: 60%;
+        position: absolute;
+        z-index: 1;
+    }
+    .navbar-collapse{
+        border: none;
+    }
+    .res-menu{
+        width: 100%;
+        background-color: #004072;
+        color: #fff;
+        font-weight: bold;
+    }
+    #header .navbar {
+        margin-top: 0px;
+        width: 100%;
+    }
+    .navbar-custom {
+        color:#ffffff;
+        border-radius:0;
+        width: 200px;
+    }
+    #myNavbar > ul {
+        margin-top: 0px;
+        width: 100%;
+    }
+    #header li {
+        background-color: #004072;
+        color: #FFF;
+        font-size: 13px;
+        font-weight: bold;
+        width: 100%;
+        text-align:left;
+    }
+}
+
+.NTT-content .dangnhap {
+    margin-bottom: 20px;
+    border: 1px solid #CCC;
+    padding: 10px;
+}
+
+.NTT-content li {
+    display: block;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #CCC;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #FFA500;
+}
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #1BB1B2;
+}
+.navbar-custom .navbar-nav > li > a.not-active {
+    color: silver;
+}
+.navbar-custom .navbar-nav > li > a.not-active:hover {
+    color: dimgray;
+}
+.navbar-custom .navbar-brand {
+    color: #eeeeee;
+}
+/* end custom css menu*/
+
+#footer ul {
+    margin-top: 10px;
+}
+
+#footer li {
+    display: block;
+    font-weight: bold;
+    color: #FFF;
+    font-size: 13px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.NTT-content .NTT-content-share {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: inset;
+    border-bottom-color: #999;
+}
+.NTT-content p {
+
+}
+.NTT-baocao-content {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.NTT-baocao-content > h4 > a {
+    margin-left:10px;
+}
+.NTT-baocao-content .edit {
+    font-size: 10px;
+    color: #00F;
+    text-align: right;
+}
+.NTT-baocao-content .glyphicon-edit {
+    color: #00F;
+}
+
+.NTT-baocao-content .taive {
+    font-size: 10px;
+    color: #00F;
+    margin-left: 20px;
+}
+.m20 {
+    margin-left: 20px;
+}
+.NTT-baocao-content .edit:after {
+    content:" (chỉnh sửa)";
+    color:red;
+}
+
+.NTT-phanquyen-content .user {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCC;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #00F;
+}
+.NTT-tonghop-content .tonghop-taive {
+    margin-top: 16px;
+}
+.NTT-tonghop-content .tonghop-tc {
+    margin-left: 10px;
+}
+.NTT-tonghop-content .tonghop-tci {
+    margin-left: 20px;
+}
+.NTT-tonghop-content h5 {
+    margin-left: 70px;
+}
+.NTT-cauhoi-content > .container {
+    font-size: 26px;
+}
+.NTT-cauhoi-content > .container > label {
+    color: #ffffff;
+    background-color: #6699cc;
+    padding: 8px;
+    border-radius: 5px;
+}
+.NTT-cauhoi-content > .container > div.jumbotron {
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 2px;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #6699cc;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #6699cc;
+}
+.NTT-cauhoi-content > .container > div.jumbotron > p {
+    font-size: 16px;
+    font-weight: bold;
+}
+.NTT-cauhoi-content > .container > div.jumbotron label {
+    margin-left: -15px;
+    text-decoration: underline;
+}
+.NTT-quantri-content .content-wrap {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.NTT-quantri-content .menu {
+    padding-top: -5px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #CCC;
+}
+.admin-menu > li > a {
+    font-weight: bold;
+}
+.NTT-quantri-content h2 {
+    margin-top: 5px;
+}
+.form-group.required .control-label:after {
+    content:" *";
+    color:red;
+}
+.form-group.group-inline {
+    align-items: center;
+    display: flex
+}
+.NTT-quantri-content h5 {
+    font-weight: bold;
+    color: #00F;
+    text-decoration: blink;
+    font-size: 16px;
+}
+.NTT-chiase-content .btn {
+    margin-right: 5px;
+}
+.NTT-chiase-content p {
+    text-align: left;
+    padding-top: 10px;
+}
+.NTT-chiase-content .chiase-page {
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.NTT-chiase-content .glyph {
+    padding-left: 40px;
+}
+.NTT-chiase-content .NTT-content-share {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCC;
+}
+.w50 {
+    width:50px !important;
+}
+.w120 {
+    width: 120px !important;
+}
+.tr-blue {
+    cursor: pointer;
+    background-color: #6699cc;
+    font-weight: bold;
+    color: #FFF;
+}
+.tr-lblue {
+    cursor: pointer;
+    background-color: #99ccff;
+    font-weight: bold;
+    color: #FFF;
+}
+.tr-grey {
+    background-color: #666666;
+    color: #FFF;
+}
+.glyphicon-play-circle{
+    margin-right: 10px;
+}
+h4 > a > span {
+    margin-left: 10px;
+    color: #009;
+}
+h3 > a > span {
+    margin-left: 10px;
+    color: #009;
+}
+.Content-tit-color{
+    color: #009;
+}
+h2 > span {
+    margin-right: 10px;
+}
+.text-bold {
+    font-weight: bold;
+}
+.text-bold a:link {
+    text-decoration: underline;
+    color: #000;
+}
+.text-bold a:hover {
+    text-decoration: none;
+    color: #0000c8;
+}
+.text-bold a:focus {
+    text-decoration: underline;
+    color: #c80000;
+}
+.text-bold li {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    display: block;
+}
+.text-bold .glyphicon-equalizer {
+    margin-right: 10px;
+}
+.no-border{
+    border: none;
+}
+.left-bo{
+    border-left: dashed;
+    border-width: 1px;
+    border-color: #CCC;
+}
+.tonghop-cursor{
+    cursor: default;
+}
+.text-inline {
+    margin: 0;
+    position: absolute;
+    right: 60px;
+    top: 10px;
+    z-index: 9999;
+}
+.text-inline li {
+    display: inline;
+    border-right-color: transparent;
+}
+.text-inline li a {
+    color: #FFF;
+    border: none;
+}
+.glyphicon-th{
+    margin-right: 10px;
+}
+a > span.glyphicon {
+    cursor: pointer;
+}
+.h20{
+    height: 10px;
+}
+.martop-15{
+    margin-top: 15px;
+}
+.martop-10{
+    margin-top: 10px;
+}
+.row-bo{
+    border: 1px solid;
+    border-color: #ddd;
+	border-radius: 4px;
+}
+.row-bo-top{
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #ddd;
+    background-color: #f9f9f9;
+}
+.but-patop{
+    padding-top: 3px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.te-area{
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+}
+.share-3bu{
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.upd-glyph-size{
+    margin-top: 7px;
+    font-size: 20px;
+    color: #286090;
+}
+.com-glyph-size{
+    margin-top: 7px;
+    font-size: 20px;
+    color: #286090;
+}
+.rem-glyph-size{
+    margin-top: 7px;
+    font-size: 20px;
+    color: #C9302C;
+}
+.marle{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.padtop-3{
+    padding-right: 4px;
+}
+.menu-s{
+    font-size: 13px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.v-noti-line{
+    border-left-style: dashed;
+    border-left-width: 1px;
+    border-left-color: #ccc;
+    display: block;
+}
+.v-noti-line > li {
+    display: block;
+	font-size: 16px;
+}

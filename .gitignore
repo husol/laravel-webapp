@@ -1,0 +1,23 @@
+#common files
+.env
+
+#logs files
+
+#data files
+public/avatars/
+public/files/
+
+#IDEA files
+*.iml
+.idea/
+
+#Netbeans files
+nbproject/
+
+#file system on mac
+.DS_Store
+
+#ignore grunt module and minified files
+node_modules
+*_min
+
